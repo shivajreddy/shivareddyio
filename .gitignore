@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+=======
+.vscode
+.DS_Store
+venv/
+node_modules
+/node_modules
+node_modules/
+**node_modules
+__pycache__/
+**.env
+
+>>>>>>> 326d21b5ff265120136dbb00fb7de2364777c939
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -8,15 +21,19 @@
 # testing
 /coverage
 
+<<<<<<< HEAD
 # next.js
 /.next/
 /out/
 
+=======
+>>>>>>> 326d21b5ff265120136dbb00fb7de2364777c939
 # production
 /build
 
 # misc
 .DS_Store
+<<<<<<< HEAD
 *.pem
 
 # debug
@@ -37,3 +54,13 @@ next-env.d.ts
 
 #IDE
 .idea
+=======
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+>>>>>>> 326d21b5ff265120136dbb00fb7de2364777c939
