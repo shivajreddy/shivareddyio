@@ -1,3 +1,12 @@
-.postcard {
+.post_card {
   border: solid red 2px;
+  padding: 24px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.post_card_date {
+}
+
+.post_card_date {
 }

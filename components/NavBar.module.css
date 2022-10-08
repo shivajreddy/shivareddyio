@@ -1,0 +1,53 @@
+/* Nav */
+.nav_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5.625rem;
+  z-index: 1;
+}
+
+.nav_container > .glass_content {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.left_menu {
+  position: absolute;
+  left: 5%;
+  top: 0;
+  bottom: 0;
+  height: 1.5625rem;
+  margin: auto;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.nav_content {
+  margin: 0 auto 0 8.7rem;
+  max-width: 62.5rem;
+  min-height: 5.375rem;
+  position: relative;
+  width: 80%;
+}
+
+@media all and (max-width: 50.625rem) {
+  .nav_content li {
+    display: none;
+  }
+}
+
+.nav_cta {
+  border: solid 0.125rem rgb(0, 153, 255);
+  border-radius: 0.1875rem;
+  padding: 0 1.875rem;
+  background: transparent;
+  color: rgb(0, 153, 255);
+  font-size: 1rem;
+  position: absolute;
+  right: 4%;
+  height: 2.75rem;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
