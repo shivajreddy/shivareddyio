@@ -1,78 +1,34 @@
 import React from "react";
-import styles from "./"
+import styles from "./NavBar.module.css";
 
 function NavBar() {
   return (
-    <frosted-glass-container stretch="true">
-      <div id="app">
-        <frosted-glass overlay-color="#ffffff52" className="nav-container"
+    <div className={styles.navbar}>
+      <p>hi</p>
+      <p>hi</p>
+      <div className="flex justify-center align-center close">
+        <div
+          className="close absolute top-3 left-3 flex w-80 backdrop-filter backdrop-blur-lg bg-gradient-to-r from-green-400 opacity-90 to-amber-400 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md"
+          role="alert"
         >
-          <i className="material-icons left-menu"></i>
-          <ul className="nav-content">
-            <li>Home</li>
-            <li>Our Story</li>
-            <li>Services</li>
-            <li>Work</li>
-            <li>Journal</li>
-            <li>Contact</li>
-          </ul>
-          <button className="nav-cta">Call Us</button>
-        </frosted-glass>
-        <div className="hero-container">
-          <frosted-glass
-            overlay-color="#ffffff52"
-            blur-amount="1.6rem"
-            className="hero-value-add"
-          >
-            <h1>Frosted Glass</h1>
-            <div className="hero-details">
-              next level street art gastropub flannel keytar sartorial
-              sustainable ennui Brooklyn kitsch artisan typewriter
-            </div>
-            <button className="hero-cta">Order now</button>
-          </frosted-glass>
-        </div>
-        <div className="extra-container">
-          <div className="extra-content">
-            <h2>Artisan craft beer</h2>
-            <p>
-              Odd Future raw denim tattooed Godard Truffaut organic tote bag
-              Carles messenger bag flexitarian twee PBR&B blog
-            </p>
-            <button className="nav-cta">schedule a demo</button>
+          <div className="py-1 ">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-10 w-10 m-3 bg-"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clipRule="evenodd"
+              />
+            </svg>
           </div>
-        </div>
-        <div className="extra-container-1"></div>
-        <div className="extra-container extra-container-2">
-          <div className="extra-content">
-            <h2>Kale flannel blog</h2>
-            <p>
-              {" "}
-              pack readymade Tonx fixie lomo plaid meggings brunch next level
-              authentic organic paleo
-            </p>
-            <ul className="icon-list">
-              <li>
-                <i className="material-icons">ic_flight_takeoff</i>
-              </li>
-              <li>
-                <i className="material-icons">ic_language</i>
-              </li>
-              <li>
-                <i className="material-icons">ic_card_travel</i>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="footer">
-          <ul>
-            <li>artisan</li>
-            <li>travel</li>
-            <li>curated</li>
-          </ul>
         </div>
       </div>
-    </frosted-glass-container>
+    </div>
   );
+}
 
 export default NavBar;
