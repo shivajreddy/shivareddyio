@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+    color : hsl(0deg, 0%, 100%);
+    background: hsl(210deg, 30%, 8%);
+
+    /*color : hsl(222deg, 22%, 5%);*/
+    /*background: hsl(0deg, 0%, 100%);*/
+}
+
+main{
+    color : hsl(0deg, 0%, 100%);
+    background: hsl(210deg, 30%, 8%);
+}
+
+/* Primary Navigation */
+
+.flex {
+    display: flex;
+    gap : 1rem;
+}
+
+.primary-header {
+    align-items: center;
+    justify-content: center;
+    background: hsl(0, 0%, 100%, 0.1);
+    backdrop-filter: blur(2rem);
+
+    padding: 1rem;
+    margin: 2rem 10rem;
+    border-radius: 3rem;
+}
+
+
+/*.sticky + .content {*/
+/*    padding-top: 60px;*/
+/*}*/
+
+
+.primary-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /*background: hsl(0, 0%, 100%, 0.1);*/
+    /*backdrop-filter: blur(2rem);*/
+}
+
+.primary-navigation a {
+    text-decoration: none;
+}
+
+.primary-navigation a > [aria-hidden="true"] {
+    font-weight: 700;
+    margin-inline-end: 0.75rem;
+}
+
+@media (max-width: 35rem){
+    .primary-navigation{
+        position: fixed;
+        inset: 0 0 0 30%;
+
+        flex-direction: column;
+        padding: min(10vh, 10rem) 5em;
+        background: hsl(0, 0%, 100%, 0.1);
+        backdrop-filter: blur(2rem);
+    }
+}
+

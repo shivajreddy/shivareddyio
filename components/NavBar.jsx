@@ -4,40 +4,33 @@ import styles from "./NavBar.module.css";
 
 function NavBar() {
   return (
-    <div className="pm">
+    <div>
 
-      <div>
-        <img src="/images/logo.svg" width={150} />
-      </div>
-
-      <nav>
+      <nav className="primary-header flex">
+        <a href="#" className="text-2xl text-indigo-700 pr-40">Shiva Reddy</a>
         <ul id="primary-navigation" className="primary-navigation flex">
 
+
           <li>
-            <a href="#">
-              <span aria-hidden={false}>00</span>
-              Logo
+            <a className="uppercase letter-spacing-2" href="#">
+              <span aria-hidden="true">00</span>
+              Blog
             </a>
           </li>
 
           <li>
-            <a href="#">
-              <span>Blog</span>
+            <a className="uppercase letter-spacing-2" href="#">
+              <span aria-hidden="true">00</span>
+              Projects
             </a>
           </li>
 
           <li>
-            <a href="#">
-              <span>Projects</span>
+            <a className="uppercase letter-spacing-2" href="#">
+              <span aria-hidden="true">00</span>
+              Fun-facts
             </a>
           </li>
-
-          <li>
-            <a href="#">
-              <span>Connect</span>
-            </a>
-          </li>
-
         </ul>
       </nav>
 
