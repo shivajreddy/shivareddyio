@@ -8,7 +8,7 @@ function NavBar() {
         <div className="nav-sub-container">
 
           <nav >
-          <a href="#" className="text-2xl text-indigo-700">Shiva Reddy</a>
+          <a href="#" className="text-2xl">Shiva Reddy</a>
           <ul id="primary-navigation" className="primary-navigation flex">
 
             <li>

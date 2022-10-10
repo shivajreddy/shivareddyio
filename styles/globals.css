@@ -16,6 +16,32 @@ main{
     background: hsl(210deg, 30%, 8%);
 }
 
+.hero{
+    position: relative;
+    top:0;
+    left:0;
+}
+
+#hero-bg {
+    /*display: block;*/
+    height: 300px;
+    background: linear-gradient(0deg, hsla(200deg, 100%, 85%, 0.1), hsla(200deg, 100%, 85%, 0));
+}
+
+#hero-wave{
+    background-color: hsla(200deg, 100%, 85%, 0.1);
+    position: relative;
+    z-index: 500;
+}
+
+#hero-img{
+    position: absolute;
+    top: 100px;
+    right: 180px;
+    height: 230px;
+    z-index: 200;
+}
+
 /* Primary Navigation */
 .nav-container{
     width: 100%;
@@ -25,13 +51,12 @@ main{
 
     position: fixed;
     top: 0;
+    z-index: 9999;
 }
 
 .nav-sub-container{
     display: flex;
     align-items: center;
-    background: hsl(0, 0%, 100%, 0.1);
-    backdrop-filter: blur(0.8rem);
 
     margin: 2rem 0;
     padding: 0 3rem;
@@ -51,6 +76,7 @@ nav {
     padding: 0;
     margin: 0;
     gap:2rem;
+
 }
 
 .primary-navigation a {
@@ -62,19 +88,29 @@ nav {
     margin-inline-end: 0.75rem;
 }
 
+@supports (backdrop-filter: blur(2rem)) {
+    .nav-sub-container{
+        background: hsl(0, 0%, 100%, 0.1);
+        backdrop-filter: blur(0.8rem);
+    }
+}
+
 @media (max-width: 35rem){
     .nav-sub-container{
+        /*background: none;*/
         backdrop-filter: none;
     }
 
     .primary-navigation{
+        gap:2em;
+
         position: fixed;
-        inset: 0 0 0 30%;
+        inset: 0 0 0 20%;
 
         flex-direction: column;
         padding: min(10vh, 10rem) 5em;
         background: hsl(0, 0%, 100%, 0.1);
-        backdrop-filter: blur(2rem);
+        backdrop-filter: blur(0.8rem);
     }
 }
 
