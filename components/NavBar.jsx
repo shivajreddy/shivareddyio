@@ -13,21 +13,24 @@ function NavBar() {
 
             <li>
               <a className="uppercase letter-spacing-2" href="#">
-                <span aria-hidden="true">00</span>
                 Blog
               </a>
             </li>
 
             <li>
               <a className="uppercase letter-spacing-2" href="#">
-                <span aria-hidden="true">00</span>
                 Projects
               </a>
             </li>
 
             <li>
               <a className="uppercase letter-spacing-2" href="#">
-                <span aria-hidden="true">00</span>
+                Projects
+              </a>
+            </li>
+
+            <li>
+              <a className="uppercase letter-spacing-2" href="#">
                 Fun-facts
               </a>
             </li>

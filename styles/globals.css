@@ -14,6 +14,7 @@ body {
 main{
     color : hsl(0deg, 0%, 100%);
     background: hsl(210deg, 30%, 8%);
+    margin: 0 18rem;
 }
 
 .hero{
@@ -23,9 +24,12 @@ main{
 }
 
 #hero-bg {
-    /*display: block;*/
     height: 300px;
     background: linear-gradient(0deg, hsla(200deg, 100%, 85%, 0.1), hsla(200deg, 100%, 85%, 0));
+}
+
+#hero-about {
+    padding: 5rem 35rem 0 18rem;
 }
 
 #hero-wave{
@@ -36,8 +40,8 @@ main{
 
 #hero-img{
     position: absolute;
-    top: 100px;
-    right: 180px;
+    top: 7.5rem;
+    right: 20rem;
     height: 230px;
     z-index: 200;
 }
@@ -45,12 +49,10 @@ main{
 /* Primary Navigation */
 .nav-container{
     width: 100%;
-    height: 140px;
     display: flex;
     justify-content: center;
 
     position: fixed;
-    top: 0;
     z-index: 9999;
 }
 
@@ -58,8 +60,8 @@ main{
     display: flex;
     align-items: center;
 
-    margin: 2rem 0;
-    padding: 0 3rem;
+    margin: 1rem 0;
+    padding: 0 1.75rem;
     border-radius: 3rem;
     gap: 10rem;
 }
@@ -68,6 +70,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 3rem;
+    padding: 5px 0;
 }
 
 
@@ -76,17 +79,16 @@ nav {
     padding: 0;
     margin: 0;
     gap:2rem;
-
 }
 
 .primary-navigation a {
     text-decoration: none;
 }
 
-.primary-navigation a > [aria-hidden="true"] {
-    font-weight: 700;
-    margin-inline-end: 0.75rem;
-}
+/*.primary-navigation a > [aria-hidden="true"] {*/
+/*    font-weight: 700;*/
+/*    margin-inline-end: 0.75rem;*/
+/*}*/
 
 @supports (backdrop-filter: blur(2rem)) {
     .nav-sub-container{
@@ -114,3 +116,9 @@ nav {
     }
 }
 
+
+.main-latest-posts{
+    border: solid yellow 2px;    /*toggle*/
+    margin: 0 18rem;
+    padding: 20px 0;
+}
